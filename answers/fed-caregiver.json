@@ -1,0 +1,119 @@
+{
+  "question": "Under SBA's VetCert rules, can the spouse or permanent caregiver of a veteran with a permanent and total disability control an SDVOSB?",
+  "status": "answered",
+  "answer": "Yes, under SBA's VetCert rules, the spouse or permanent caregiver of a service-disabled veteran with a permanent and total disability can control an SDVOSB. This is permitted when the veteran is unable to manage the daily business operations of the concern, and the spouse or caregiver must reside in the United States. The rule requires that the management and daily business operations of the concern be controlled by one or more service-disabled veterans, with this specific exception for permanent and severe disability cases.",
+  "citations": [
+    {
+      "label": "P1",
+      "quote": "in the case of a veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran",
+      "cite": "13 CFR 128.203",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.203",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P2",
+      "quote": "in the case of a veteran with a disability that is rated by the Secretary of Veterans Affairs as a permanent and total disability who are unable to manage the daily business operations",
+      "cite": "13 CFR 128.200",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.200",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P4",
+      "quote": "Service-disabled veteran with a permanent and severe disability means a veteran with a service-connected disability that has been determined by the Department of Veterans Affairs",
+      "cite": "13 CFR 128.102",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.102",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "13 CFR 128.203",
+      "jurisdiction": "Federal",
+      "score": 0.04959,
+      "bm25_rank": 1,
+      "vector_rank": 2
+    },
+    {
+      "label": "P2",
+      "cite": "13 CFR 128.200",
+      "jurisdiction": "Federal",
+      "score": 0.04698,
+      "bm25_rank": 2,
+      "vector_rank": 8
+    },
+    {
+      "label": "P3",
+      "cite": "13 CFR 128.202",
+      "jurisdiction": "Federal",
+      "score": 0.04674,
+      "bm25_rank": 10,
+      "vector_rank": 1
+    },
+    {
+      "label": "P4",
+      "cite": "13 CFR 128.102",
+      "jurisdiction": "Federal",
+      "score": 0.04625,
+      "bm25_rank": 9,
+      "vector_rank": 3
+    },
+    {
+      "label": "P5",
+      "cite": "13 CFR 128.300",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P6",
+      "cite": "FAR 2.101",
+      "jurisdiction": "Federal",
+      "score": 0.04148,
+      "bm25_rank": 7,
+      "vector_rank": 21
+    },
+    {
+      "label": "P7",
+      "cite": "FAR 19.307",
+      "jurisdiction": "Federal",
+      "score": 0.0396,
+      "bm25_rank": 25,
+      "vector_rank": 10
+    },
+    {
+      "label": "P8",
+      "cite": "FAR 19.1403",
+      "jurisdiction": "Federal",
+      "score": 0.0346,
+      "bm25_rank": 33,
+      "vector_rank": 23
+    }
+  ],
+  "jurisdictions": [
+    "Federal"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "fed-caregiver",
+  "jurisdiction_asked": "Federal"
+}

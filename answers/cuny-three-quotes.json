@@ -1,0 +1,87 @@
+{
+  "question": "How many written quotes does CUNY require for purchases between $20,000 and $50,000?",
+  "status": "answered",
+  "answer": "CUNY requires a minimum of three written quotes for purchases between $20,000 and $50,000. This rule is set forth in the CUNY Procurement Policy (2019). The policy states that for purchases of $20,000 or more but less than $50,000, Purchasing Departments must obtain a minimum of three written quotes from vendors.",
+  "citations": [
+    {
+      "label": "P2",
+      "quote": "For purchases of $20,000 or more but less than $50,000, Purchasing Departments must obtain a minimum of three written quotes from vendors.",
+      "cite": "CUNY Procurement Policy (2019), p. 8",
+      "link": "https://www1.cuny.edu/sites/selltocuny/wp-content/uploads/sites/50/2020/01/CUNY-Procurement-Policy-Amendments-Adopted-by-Board-of-Trusteees-12-16-19.pdf#page=8",
+      "document": "CUNY Procurement Policy (2019)",
+      "doc_id": "cuny-procurement-policy",
+      "jurisdiction": "CUNY",
+      "as_of": "2019-12",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "CUNY 2025-26 guidelines memo, p. 2",
+      "jurisdiction": "CUNY",
+      "score": 0.04532,
+      "bm25_rank": 12,
+      "vector_rank": 3
+    },
+    {
+      "label": "P2",
+      "cite": "CUNY Procurement Policy (2019), p. 8",
+      "jurisdiction": "CUNY",
+      "score": 0.05,
+      "bm25_rank": 1,
+      "vector_rank": 1
+    },
+    {
+      "label": "P3",
+      "cite": "CUNY Procurement Policy (2019), p. 5",
+      "jurisdiction": "CUNY",
+      "score": 0.04003,
+      "bm25_rank": 23,
+      "vector_rank": 10
+    },
+    {
+      "label": "P4",
+      "cite": "CUNY Procurement Policy (2019), p. 5",
+      "jurisdiction": "CUNY",
+      "score": 0.03799,
+      "bm25_rank": 27,
+      "vector_rank": 14
+    },
+    {
+      "label": "P5",
+      "cite": "CUNY Procurement Policy (2019), p. 9",
+      "jurisdiction": "CUNY",
+      "score": 0.03736,
+      "bm25_rank": 39,
+      "vector_rank": 9
+    },
+    {
+      "label": "P6",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.03279,
+      "bm25_rank": 2,
+      "vector_rank": 2
+    },
+    {
+      "label": "P7",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 5",
+      "jurisdiction": "New York State",
+      "score": 0.02822,
+      "bm25_rank": 4,
+      "vector_rank": 22
+    }
+  ],
+  "jurisdictions": [
+    "CUNY"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.4,
+  "warnings": [],
+  "id": "cuny-three-quotes",
+  "jurisdiction_asked": "CUNY"
+}

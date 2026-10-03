@@ -1,0 +1,18 @@
+[project]
+name = "procurement-rules-navigator"
+version = "0.1.0"
+description = "Answers about New York State, NYC, CUNY and federal purchasing rules, quoted from the rules, with conflicts between sources flagged."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = []
+authors = [{ name = "Studio Chingie LLC" }]
+
+[project.scripts]
+procurement-navigator = "navigator.__main__:main"
+
+[tool.setuptools]
+packages = ["navigator"]
+
+[tool.setuptools.package-data]
+navigator = ["static/*.html"]

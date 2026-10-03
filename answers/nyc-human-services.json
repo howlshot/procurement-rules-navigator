@@ -1,0 +1,123 @@
+{
+  "question": "Can New York City agencies use the M/WBE small purchase method for human services?",
+  "status": "answered",
+  "answer": "No, New York City agencies cannot use the M/WBE small purchase method for human services. The NYC PPB Rules explicitly prohibit agencies from making purchases pursuant to the M/WBE small purchase subparagraph for human services. This rule is part of New York City's procurement regulations.",
+  "citations": [
+    {
+      "label": "P3",
+      "quote": "Additionally, agencies shall not make purchases pursuant to this subparagraph for human services.",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 93",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=93",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P3",
+      "quote": "No competition is required for the procurement of goods, services, and construction from M/WBE vendors",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 93",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=93",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYC PPB Rules \u00a7 1-01, p. 17",
+      "jurisdiction": "New York City",
+      "score": 0.04231,
+      "bm25_rank": 6,
+      "vector_rank": 19
+    },
+    {
+      "label": "P2",
+      "cite": "NYC PPB Rules \u00a7 3-15, p. 125",
+      "jurisdiction": "New York City",
+      "score": 0.04219,
+      "bm25_rank": 21,
+      "vector_rank": 5
+    },
+    {
+      "label": "P3",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 93",
+      "jurisdiction": "New York City",
+      "score": 0.04144,
+      "bm25_rank": 2,
+      "vector_rank": 30
+    },
+    {
+      "label": "P4",
+      "cite": "NYC PPB Rules \u00a7 3-09, p. 98",
+      "jurisdiction": "New York City",
+      "score": 0.04027,
+      "bm25_rank": 15,
+      "vector_rank": 16
+    },
+    {
+      "label": "P5",
+      "cite": "CUNY Procurement Policy (2019), p. 8",
+      "jurisdiction": "CUNY",
+      "score": 0.03175,
+      "bm25_rank": 4,
+      "vector_rank": 4
+    },
+    {
+      "label": "P6",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 2",
+      "jurisdiction": "New York State",
+      "score": 0.02685,
+      "bm25_rank": 16,
+      "vector_rank": 15
+    },
+    {
+      "label": "P7",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 5",
+      "jurisdiction": "New York State",
+      "score": 0.02461,
+      "bm25_rank": 27,
+      "vector_rank": 18
+    },
+    {
+      "label": "P8",
+      "cite": "OGS MWBE and SDVOB guide, p. 18",
+      "jurisdiction": "New York State",
+      "score": 0.02534,
+      "bm25_rank": 37,
+      "vector_rank": 8
+    },
+    {
+      "label": "P9",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P10",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    }
+  ],
+  "jurisdictions": [
+    "New York City"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.4,
+  "warnings": [],
+  "id": "nyc-human-services",
+  "jurisdiction_asked": "New York City"
+}

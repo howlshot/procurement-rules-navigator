@@ -1,0 +1,131 @@
+{
+  "question": "Who are New York State's preferred sources?",
+  "status": "answered",
+  "answer": "New York State's preferred sources are the Correctional Industries Program (Corcraft), the New York State Preferred Source Program for People Who are Blind (NYSPSP), and the New York State Industries for the Disabled, Inc. (NYSID). These organizations are designated under State Finance Law \u00a7 162 to advance special social and economic goals. Agencies must purchase from these sources when the desired commodity or service is available in the required form, function, and utility at a price no more than 15% above the prevailing market rate.",
+  "citations": [
+    {
+      "label": "P4",
+      "quote": "the Preferred Sources are (i) the Correctional Industries Program (known as \u201cCorcraft\u201d), which is run by the Department of Corrections and Community Supervision (\u201cDOCCS\u201d)",
+      "cite": "NYS Procurement Guidelines, p. 10",
+      "link": "https://ogs.ny.gov/system/files/documents/2025/01/february-2025-nys-procurement-guidelines.pdf#page=10",
+      "document": "NYS Procurement Guidelines",
+      "doc_id": "nys-procurement-guidelines",
+      "jurisdiction": "New York State",
+      "as_of": "2025-02",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P4",
+      "quote": "(ii) the New York State Preferred Source Program for People Who are Blind (\u201cNYSPSP\u201d); and (iii) the New York State Industries for the Disabled, Inc. (\u201cNYSID\u201d)",
+      "cite": "NYS Procurement Guidelines, p. 10",
+      "link": "https://ogs.ny.gov/system/files/documents/2025/01/february-2025-nys-procurement-guidelines.pdf#page=10",
+      "document": "NYS Procurement Guidelines",
+      "doc_id": "nys-procurement-guidelines",
+      "jurisdiction": "New York State",
+      "as_of": "2025-02",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P5",
+      "quote": "The New York State Preferred Sources include: Corcraft; New York State Preferred Source Program for New Yorkers Who are Blind (NYSPSP); and New York State Industries for the Disabled, Inc.",
+      "cite": "NYC Charter \u00a7 112 (in NYS Procurement Guidelines), p. 45",
+      "link": "https://ogs.ny.gov/system/files/documents/2025/01/february-2025-nys-procurement-guidelines.pdf#page=45",
+      "document": "NYS Procurement Guidelines",
+      "doc_id": "nys-procurement-guidelines",
+      "jurisdiction": "New York State",
+      "as_of": "2025-02",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P4",
+      "quote": "the price is no more than 15% above the prevailing market rate (or, in the case of Corcraft, the price of the commodity does not exceed a reasonable, fair market rate as determined by DOCCS)",
+      "cite": "NYS Procurement Guidelines, p. 10",
+      "link": "https://ogs.ny.gov/system/files/documents/2025/01/february-2025-nys-procurement-guidelines.pdf#page=10",
+      "document": "NYS Procurement Guidelines",
+      "doc_id": "nys-procurement-guidelines",
+      "jurisdiction": "New York State",
+      "as_of": "2025-02",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.0455,
+      "bm25_rank": 9,
+      "vector_rank": 5
+    },
+    {
+      "label": "P2",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 7",
+      "jurisdiction": "New York State",
+      "score": 0.03981,
+      "bm25_rank": 24,
+      "vector_rank": 10
+    },
+    {
+      "label": "P3",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 5",
+      "jurisdiction": "New York State",
+      "score": 0.03752,
+      "bm25_rank": 19,
+      "vector_rank": 23
+    },
+    {
+      "label": "P4",
+      "cite": "NYS Procurement Guidelines, p. 10",
+      "jurisdiction": "New York State",
+      "score": 0.04918,
+      "bm25_rank": 2,
+      "vector_rank": 2
+    },
+    {
+      "label": "P5",
+      "cite": "NYC Charter \u00a7 112 (in NYS Procurement Guidelines), p. 45",
+      "jurisdiction": "New York State",
+      "score": 0.04881,
+      "bm25_rank": 1,
+      "vector_rank": 4
+    },
+    {
+      "label": "P6",
+      "cite": "NYS Procurement Guidelines, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.04328,
+      "bm25_rank": 14,
+      "vector_rank": 7
+    },
+    {
+      "label": "P7",
+      "cite": "NYS Procurement Guidelines, p. 9",
+      "jurisdiction": "New York State",
+      "score": 0.04219,
+      "bm25_rank": 5,
+      "vector_rank": 21
+    },
+    {
+      "label": "P8",
+      "cite": "OGS MWBE and SDVOB guide, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.04546,
+      "bm25_rank": 6,
+      "vector_rank": 8
+    }
+  ],
+  "jurisdictions": [
+    "New York State"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.4,
+  "warnings": [],
+  "id": "nys-preferred-sources",
+  "jurisdiction_asked": "New York State"
+}

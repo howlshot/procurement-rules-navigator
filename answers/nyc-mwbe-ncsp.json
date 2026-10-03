@@ -1,0 +1,115 @@
+{
+  "question": "What is the NYC M/WBE noncompetitive small purchase limit?",
+  "status": "answered",
+  "answer": "The NYC M/WBE noncompetitive small purchase limit is $1,500,000. This rule is established by the New York City Charter and implemented through NYC PPB Rules, which allow agencies to make procurements from certified M/WBE vendors without a formal competitive process up to this amount.",
+  "citations": [
+    {
+      "label": "P6",
+      "quote": "agencies may make procurements of goods, services and construction for amounts not exceeding one million five hundred thousand dollars from businesses certified as minority or women-owned business enterprises",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=182",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P1",
+      "quote": "No competition is required for the procurement of goods, services, and construction from M/WBE vendors",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=92",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "jurisdiction": "New York City",
+      "score": 0.04773,
+      "bm25_rank": 1,
+      "vector_rank": 7
+    },
+    {
+      "label": "P2",
+      "cite": "NYC PPB Rules \u00a7 3-02, p. 74",
+      "jurisdiction": "New York City",
+      "score": 0.04171,
+      "bm25_rank": 7,
+      "vector_rank": 20
+    },
+    {
+      "label": "P3",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 3",
+      "jurisdiction": "New York State",
+      "score": 0.01587,
+      "bm25_rank": null,
+      "vector_rank": 4
+    },
+    {
+      "label": "P4",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 5",
+      "jurisdiction": "New York State",
+      "score": 0.01493,
+      "bm25_rank": null,
+      "vector_rank": 8
+    },
+    {
+      "label": "P5",
+      "cite": "OGS MWBE and SDVOB guide, p. 18",
+      "jurisdiction": "New York State",
+      "score": 0.01639,
+      "bm25_rank": null,
+      "vector_rank": 2
+    },
+    {
+      "label": "P6",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P7",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P8",
+      "cite": "NYC PPB Rules \u00a7 3-03, p. 5",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P9",
+      "cite": "NYC PPB Rules \u00a7 3-03, p. 5",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    }
+  ],
+  "jurisdictions": [
+    "New York City"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "nyc-mwbe-ncsp",
+  "jurisdiction_asked": "New York City"
+}

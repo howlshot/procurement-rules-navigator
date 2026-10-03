@@ -1,0 +1,79 @@
+{
+  "question": "What is the NYC micropurchase limit for construction?",
+  "status": "answered",
+  "answer": "The New York City micropurchase limit for construction is $35,000. Under NYC PPB Rules \u00a7 3-08, procurements of construction valued at $35,000 or less do not require competition. This is distinct from the micropurchase limit for goods and all services except construction, which is $20,000.",
+  "citations": [
+    {
+      "label": "P1",
+      "quote": "for procurements of construction the value of which is $35,000 or less, no competition is required",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=92",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "jurisdiction": "New York City",
+      "score": 0.04959,
+      "bm25_rank": 1,
+      "vector_rank": 2
+    },
+    {
+      "label": "P2",
+      "cite": "NYC Charter \u00a7 314 (in NYC PPB Rules), p. 189",
+      "jurisdiction": "New York City",
+      "score": 0.03837,
+      "bm25_rank": 12,
+      "vector_rank": 28
+    },
+    {
+      "label": "P3",
+      "cite": "NYC Charter \u00a7 329 (in NYC PPB Rules), p. 196",
+      "jurisdiction": "New York City",
+      "score": 0.03454,
+      "bm25_rank": 36,
+      "vector_rank": 21
+    },
+    {
+      "label": "P4",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 5",
+      "jurisdiction": "New York State",
+      "score": 0.01613,
+      "bm25_rank": null,
+      "vector_rank": 3
+    },
+    {
+      "label": "P5",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.01587,
+      "bm25_rank": null,
+      "vector_rank": 4
+    },
+    {
+      "label": "P6",
+      "cite": "OGS MWBE and SDVOB guide, p. 18",
+      "jurisdiction": "New York State",
+      "score": 0.01562,
+      "bm25_rank": null,
+      "vector_rank": 5
+    }
+  ],
+  "jurisdictions": [
+    "New York City"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "nyc-micro-construction",
+  "jurisdiction_asked": "New York City"
+}

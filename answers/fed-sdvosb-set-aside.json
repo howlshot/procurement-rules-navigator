@@ -1,0 +1,139 @@
+{
+  "question": "When can a federal contracting officer set aside an acquisition for SDVOSB concerns?",
+  "status": "answered",
+  "answer": "Under federal rules, a contracting officer may set aside an acquisition for SDVOSB concerns when there is a reasonable expectation, based on market research, that at least two responsible SDVOSBs will submit offers and the award can be made at a fair market price. For non-VA procurements, the officer must first determine that the requirement is not excluded from SDVOSB contracting under 13 CFR 128.403, and must consider SDVOSB set-asides before considering small business set-asides or sole source awards.",
+  "citations": [
+    {
+      "label": "P1",
+      "quote": "Have a reasonable expectation that at least two responsible SDVOSBs will submit offers; and",
+      "cite": "13 CFR 128.404",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.404",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P1",
+      "quote": "Determine that the award can be made at fair market price.",
+      "cite": "13 CFR 128.404",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.404",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P1",
+      "quote": "For non-VA procurements, the contracting officer first must review a requirement to determine whether it is excluded from SDVOSB contracting pursuant to \u00a7 128.403.",
+      "cite": "13 CFR 128.404",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.404",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P6",
+      "quote": "Shall consider SDVOSB set-asides before considering SDVOSB sole source awards (see 19.1406) or small business set-asides (see subpart 19.5).",
+      "cite": "FAR 19.1405",
+      "link": "https://www.acquisition.gov/far/19.1405",
+      "document": "FAR Part 19",
+      "doc_id": "far-part-19",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "13 CFR 128.404",
+      "jurisdiction": "Federal",
+      "score": 0.04698,
+      "bm25_rank": 8,
+      "vector_rank": 2
+    },
+    {
+      "label": "P2",
+      "cite": "13 CFR 128.404",
+      "jurisdiction": "Federal",
+      "score": 0.04692,
+      "bm25_rank": 7,
+      "vector_rank": 3
+    },
+    {
+      "label": "P3",
+      "cite": "13 CFR 128.403",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P4",
+      "cite": "FAR 2.101",
+      "jurisdiction": "Federal",
+      "score": 0.05,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P5",
+      "cite": "FAR 19.307",
+      "jurisdiction": "Federal",
+      "score": 0.04808,
+      "bm25_rank": 1,
+      "vector_rank": 6
+    },
+    {
+      "label": "P6",
+      "cite": "FAR 19.1405",
+      "jurisdiction": "Federal",
+      "score": 0.04808,
+      "bm25_rank": 6,
+      "vector_rank": 1
+    },
+    {
+      "label": "P7",
+      "cite": "FAR 19.1505",
+      "jurisdiction": "Federal",
+      "score": 0.04459,
+      "bm25_rank": 2,
+      "vector_rank": 16
+    },
+    {
+      "label": "P8",
+      "cite": "FAR 19.1406",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P9",
+      "cite": "FAR 19.1406",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    }
+  ],
+  "jurisdictions": [
+    "Federal"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "fed-sdvosb-set-aside",
+  "jurisdiction_asked": "Federal"
+}

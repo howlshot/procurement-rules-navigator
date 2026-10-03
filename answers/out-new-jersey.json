@@ -1,0 +1,56 @@
+{
+  "question": "What is the public bidding threshold for New Jersey counties?",
+  "status": "not_found",
+  "answer": "The provided passages do not contain information about public bidding thresholds for New Jersey counties. The documents cover procurement rules for New York State, New York City, and CUNY.",
+  "citations": [],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 3",
+      "jurisdiction": "New York State",
+      "score": 0.03075,
+      "bm25_rank": 12,
+      "vector_rank": 1
+    },
+    {
+      "label": "P2",
+      "cite": "NYC Charter \u00a7 112 (in NYS Procurement Guidelines), p. 45",
+      "jurisdiction": "New York State",
+      "score": 0.03254,
+      "bm25_rank": 1,
+      "vector_rank": 4
+    },
+    {
+      "label": "P3",
+      "cite": "NYC Charter \u00a7 112 (in NYS Procurement Guidelines), p. 30",
+      "jurisdiction": "New York State",
+      "score": 0.02524,
+      "bm25_rank": 25,
+      "vector_rank": 16
+    },
+    {
+      "label": "P4",
+      "cite": "OGS MWBE and SDVOB guide, p. 18",
+      "jurisdiction": "New York State",
+      "score": 0.03178,
+      "bm25_rank": 6,
+      "vector_rank": 2
+    },
+    {
+      "label": "P5",
+      "cite": "NYC PPB Rules \u00a7 3-02, p. 57",
+      "jurisdiction": "New York City",
+      "score": 0.02384,
+      "bm25_rank": 28,
+      "vector_rank": 22
+    }
+  ],
+  "jurisdictions": [],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "out-new-jersey",
+  "jurisdiction_asked": "Other"
+}

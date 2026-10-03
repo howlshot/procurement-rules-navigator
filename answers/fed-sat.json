@@ -1,0 +1,103 @@
+{
+  "question": "What is the federal simplified acquisition threshold?",
+  "status": "answered",
+  "answer": "The federal simplified acquisition threshold is $350,000. This rule is defined in the Federal Acquisition Regulation (FAR) 2.101. The threshold can be higher, such as $1 million for certain contingency operations or emergency responses.",
+  "citations": [
+    {
+      "label": "P3",
+      "quote": "Simplified acquisition threshold means $350,000, except for\u2014",
+      "cite": "FAR 2.101",
+      "link": "https://www.acquisition.gov/far/2.101",
+      "document": "FAR Part 2",
+      "doc_id": "far-part-2",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "13 CFR 128.406",
+      "jurisdiction": "Federal",
+      "score": 0.04633,
+      "bm25_rank": 2,
+      "vector_rank": 10
+    },
+    {
+      "label": "P2",
+      "cite": "13 CFR 128.404",
+      "jurisdiction": "Federal",
+      "score": 0.04512,
+      "bm25_rank": 8,
+      "vector_rank": 7
+    },
+    {
+      "label": "P3",
+      "cite": "FAR 2.101",
+      "jurisdiction": "Federal",
+      "score": 0.08395,
+      "bm25_rank": 26,
+      "vector_rank": 33
+    },
+    {
+      "label": "P4",
+      "cite": "FAR 19.203",
+      "jurisdiction": "Federal",
+      "score": 0.04419,
+      "bm25_rank": 16,
+      "vector_rank": 3
+    },
+    {
+      "label": "P5",
+      "cite": "FAR 19.502",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P6",
+      "cite": "FAR 19.502",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P7",
+      "cite": "FAR 13.003",
+      "jurisdiction": "Federal",
+      "score": 0.0484,
+      "bm25_rank": 4,
+      "vector_rank": 2
+    },
+    {
+      "label": "P8",
+      "cite": "FAR 13.501",
+      "jurisdiction": "Federal",
+      "score": 0.04583,
+      "bm25_rank": 13,
+      "vector_rank": 1
+    },
+    {
+      "label": "P9",
+      "cite": "FAR 13.000",
+      "jurisdiction": "Federal",
+      "score": 0.0455,
+      "bm25_rank": 5,
+      "vector_rank": 9
+    }
+  ],
+  "jurisdictions": [
+    "Federal"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "fed-sat",
+  "jurisdiction_asked": "Federal"
+}

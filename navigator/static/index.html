@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Procurement Rules Navigator</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Young+Serif&display=swap">
+<style>
+:root{color-scheme:light;--page:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--line:rgba(11,11,11,.12);--wash:rgba(11,11,11,.04);--accent:#1c5cab;--accent-ink:#fff;--quote:#f1f0ec;--warn-bg:#fff4dc;--warn-ink:#6b4a00;--ok:#006300;--bad:#a12626}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--page:#0d0d0d;--surface:#1a1a19;--ink:#fff;--ink2:#c3c2b7;--line:rgba(255,255,255,.12);--wash:rgba(255,255,255,.05);--accent:#86b6ef;--accent-ink:#0b0b0b;--quote:#232321;--warn-bg:#3a2e12;--warn-ink:#ffd27a;--ok:#0ca30c;--bad:#ff8a8a}}
+:root[data-theme=dark]{color-scheme:dark;--page:#0d0d0d;--surface:#1a1a19;--ink:#fff;--ink2:#c3c2b7;--line:rgba(255,255,255,.12);--wash:rgba(255,255,255,.05);--accent:#86b6ef;--accent-ink:#0b0b0b;--quote:#232321;--warn-bg:#3a2e12;--warn-ink:#ffd27a;--ok:#0ca30c;--bad:#ff8a8a}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font:400 16px/1.55 "Atkinson Hyperlegible Next",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:40px 16px 64px}
+.eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);margin:0 0 10px}
+h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(2rem,5vw,2.8rem);line-height:1.1;margin:0 0 12px}
+h2{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:1.25rem;margin:28px 0 10px}
+.lede{font-size:1.1rem;margin:0 0 24px;max-width:64ch}
+form{display:flex;gap:10px;flex-wrap:wrap}
+textarea{flex:1 1 420px;min-height:84px;font:inherit;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;resize:vertical}
+button.go{height:48px;align-self:flex-end;padding:0 22px;border:0;border-radius:10px;background:var(--accent);color:var(--accent-ink);font:inherit;font-weight:700;cursor:pointer}
+button.go:disabled{opacity:.5;cursor:wait}
+.examples{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.examples button{border:1px solid var(--line);background:var(--surface);color:var(--ink2);border-radius:999px;padding:6px 12px;font:inherit;font-size:.88rem;cursor:pointer}
+.examples button:hover{color:var(--ink);border-color:var(--accent)}
+.result{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.result[hidden]{display:none}
+.status{display:inline-block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink2)}
+.status.answered{color:var(--ok)}.status.not_found,.status.unsupported,.status.error{color:var(--bad)}
+.answer{font-size:1.15rem;margin:12px 0 4px}
+.cites{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.cites li{border-top:1px solid var(--line);padding-top:10px}
+.cites .where{font-weight:700}.cites .where a{color:var(--accent)}
+.cites .meta{color:var(--ink2);font-size:.85rem}
+blockquote{margin:6px 0 0;padding:8px 12px;background:var(--quote);border-radius:8px;font-size:.95rem;color:var(--ink2)}
+.warn{margin-top:14px;padding:10px 12px;border-radius:10px;background:var(--warn-bg);color:var(--warn-ink)}
+.warn strong{display:block;margin-bottom:2px}
+.warn ul{margin:6px 0 0;padding-left:18px}
+details{margin-top:16px;color:var(--ink2);font-size:.9rem}summary{cursor:pointer;font-weight:700}
+details table{border-collapse:collapse;width:100%;margin-top:8px}details td,details th{text-align:left;padding:4px 8px;border-top:1px solid var(--line)}
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:spin 1s linear infinite;margin-right:8px;vertical-align:-2px}
+@keyframes spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.spinner{animation:none}}
+footer{margin-top:40px;color:var(--ink2);font-size:.85rem}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow" id="where">Runs on this computer</p>
+  <h1>Procurement Rules Navigator</h1>
+  <p class="lede">Ask about purchasing rules for New York State agencies, New York City, CUNY, or the federal government. Answers come only from the rule documents, each fact quoted with its section or page, and conflicts between sources are called out.</p>
+  <form id="ask">
+    <textarea id="q" aria-label="Your question" placeholder="e.g. How much can a New York State agency buy from a certified SDVOB without formal bidding?"></textarea>
+    <button class="go" id="go">Ask</button>
+  </form>
+  <div class="examples" id="examples" aria-label="Example questions"></div>
+  <section class="result" id="result" hidden aria-live="polite"></section>
+  <footer id="foot"></footer>
+</main>
+<script>
+const $ = (s) => document.querySelector(s);
+const el = (tag, props = {}, ...kids) => { const n = Object.assign(document.createElement(tag), props); n.append(...kids); return n; };
+const EXAMPLES = [
+  "What is the NYC M/WBE noncompetitive small purchase limit?",
+  "How much can a New York State agency buy from a certified SDVOB without formal competitive bidding?",
+  "Up to what amount can CUNY use informal purchasing methods when buying from a certified SDVOB?",
+  "When can a federal contracting officer set aside an acquisition for SDVOSB concerns?",
+];
+for (const q of EXAMPLES) $("#examples").append(el("button", { type: "button", textContent: q, onclick: () => { $("#q").value = q; submit(); } }));
+
+fetch("/api/info").then((r) => r.json()).then((info) => {
+  $("#where").textContent = info.local ? `Runs on this computer · ${info.model}` : `Hosted model · ${info.model}`;
+  const list = info.documents.map((d) => `${d.title} (${d.as_of})`).join("; ");
+  $("#foot").textContent = `${info.passages} passages from ${info.documents.length} documents: ${list}. Not legal advice; check the cited rule before relying on it.`;
+}).catch(() => {});
+
+$("#ask").addEventListener("submit", (e) => { e.preventDefault(); submit(); });
+$("#q").addEventListener("keydown", (e) => { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) submit(); });
+
+async function submit() {
+  const question = $("#q").value.trim();
+  if (question.length < 5) return;
+  const box = $("#result");
+  box.hidden = false;
+  box.replaceChildren(el("p", {}, el("span", { className: "spinner", ariaHidden: "true" }), "Searching the rules and writing an answer…"));
+  $("#go").disabled = true;
+  try {
+    const res = await fetch("/api/ask", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ question }) });
+    const a = await res.json();
+    if (!res.ok) throw new Error(a.error || res.statusText);
+    render(a);
+  } catch (err) {
+    box.replaceChildren(el("p", { className: "status error", textContent: "Error" }), el("p", { textContent: String(err.message || err) }));
+  } finally {
+    $("#go").disabled = false;
+  }
+}
+
+const LABEL = { answered: "Answered", partial: "Partly answered", not_found: "Not in these sources", unsupported: "Not supported by a checked quote", error: "Error" };
+
+function render(a) {
+  const box = $("#result");
+  box.replaceChildren();
+  box.append(el("span", { className: `status ${a.status}`, textContent: LABEL[a.status] || a.status }));
+  box.append(el("p", { className: "answer", textContent: a.answer }));
+  if (a.disagreements.length) {
+    const w = el("div", { className: "warn" }, el("strong", { textContent: "The sources disagree" }));
+    for (const d of a.disagreements) {
+      const ul = el("ul");
+      for (const s of d.sources) ul.append(el("li", {}, el("a", { href: s.link, target: "_blank", rel: "noopener", textContent: s.cite }), ` (dated ${s.as_of})`));
+      w.append(el("p", { textContent: d.summary }), ul);
+    }
+    box.append(w);
+  }
+  if (a.citations.length) {
+    box.append(el("h2", { textContent: "Sources" }));
+    const list = el("ul", { className: "cites" });
+    for (const c of a.citations) {
+      const match = c.verification === "exact" ? "quote found word for word" : c.verification === "fuzzy" ? `close match ${Math.round(c.similarity * 100)}%` : "words found in a table";
+      list.append(el("li", {},
+        el("div", { className: "where" }, el("a", { href: c.link, target: "_blank", rel: "noopener", textContent: c.cite })),
+        el("div", { className: "meta", textContent: `${c.jurisdiction} · document dated ${c.as_of} · ${match}` }),
+        el("blockquote", { textContent: c.quote })));
+    }
+    box.append(list);
+  }
+  for (const w of a.warnings) box.append(el("div", { className: "warn", textContent: w }));
+  if (a.removed.length) box.append(el("details", {}, el("summary", { textContent: `${a.removed.length} citation(s) removed: the quote was not in the passage` }), ...a.removed.map((r) => el("p", { textContent: `${r.label}: “${r.quote}”` }))));
+  const rows = a.retrieved.map((r) => el("tr", {}, el("td", { textContent: r.label }), el("td", { textContent: r.cite }), el("td", { textContent: r.jurisdiction })));
+  box.append(el("details", {}, el("summary", { textContent: `Passages searched (${a.retrieved.length}) · ${a.seconds}s` }), el("table", {}, el("tbody", {}, ...rows))));
+}
+</script>
+</body>
+</html>

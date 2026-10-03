@@ -1,0 +1,95 @@
+{
+  "question": "What is the NYC micropurchase limit for goods and services?",
+  "status": "answered",
+  "answer": "The New York City micropurchase limit for goods and all services except construction is $20,000 or less. For procurements of construction, the micropurchase limit is $35,000 or less. Under this rule, no competition is required for purchases below these limits.",
+  "citations": [
+    {
+      "label": "P1",
+      "quote": "For procurements of goods and all services except construction the value of which is $20,000 or less",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=92",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "jurisdiction": "New York City",
+      "score": 0.04762,
+      "bm25_rank": 4,
+      "vector_rank": 4
+    },
+    {
+      "label": "P2",
+      "cite": "NYC Charter \u00a7 329 (in NYC PPB Rules), p. 196",
+      "jurisdiction": "New York City",
+      "score": 0.03819,
+      "bm25_rank": 7,
+      "vector_rank": 38
+    },
+    {
+      "label": "P3",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 5",
+      "jurisdiction": "New York State",
+      "score": 0.01667,
+      "bm25_rank": null,
+      "vector_rank": 1
+    },
+    {
+      "label": "P4",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.01515,
+      "bm25_rank": null,
+      "vector_rank": 7
+    },
+    {
+      "label": "P5",
+      "cite": "CUNY Procurement Policy (2019), p. 8",
+      "jurisdiction": "CUNY",
+      "score": 0.01538,
+      "bm25_rank": null,
+      "vector_rank": 6
+    },
+    {
+      "label": "P6",
+      "cite": "OGS MWBE and SDVOB guide, p. 18",
+      "jurisdiction": "New York State",
+      "score": 0.01639,
+      "bm25_rank": null,
+      "vector_rank": 2
+    },
+    {
+      "label": "P7",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P8",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    }
+  ],
+  "jurisdictions": [
+    "New York City"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "nyc-micro",
+  "jurisdiction_asked": "New York City"
+}

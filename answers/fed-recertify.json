@@ -1,0 +1,135 @@
+{
+  "question": "How often must a certified SDVOSB recertify with SBA?",
+  "status": "answered",
+  "answer": "Under federal rules, a certified SDVOSB must recertify its eligibility with the SBA every 3 years. Participants may submit their recertification within 90 calendar days before the end of their eligibility period, and if they miss that window, SBA will reinstate them if they recertify within 30 days after the eligibility period ends.",
+  "citations": [
+    {
+      "label": "P1",
+      "quote": "Any Participant seeking to remain certified must recertify its eligibility every 3 years.",
+      "cite": "13 CFR 128.306",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.306",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P1",
+      "quote": "Participants may recertify within 90 calendar days prior to the termination of their eligibility period.",
+      "cite": "13 CFR 128.306",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.306",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P1",
+      "quote": "if a concern is able to recertify its eligibility within 30 days of the end of its eligibility period, SBA will reinstate",
+      "cite": "13 CFR 128.306",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.306",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "13 CFR 128.306",
+      "jurisdiction": "Federal",
+      "score": 0.05,
+      "bm25_rank": 1,
+      "vector_rank": 1
+    },
+    {
+      "label": "P2",
+      "cite": "13 CFR 128.200",
+      "jurisdiction": "Federal",
+      "score": 0.04256,
+      "bm25_rank": 11,
+      "vector_rank": 12
+    },
+    {
+      "label": "P3",
+      "cite": "13 CFR 128.300",
+      "jurisdiction": "Federal",
+      "score": 0.0421,
+      "bm25_rank": 4,
+      "vector_rank": 23
+    },
+    {
+      "label": "P4",
+      "cite": "13 CFR 128.307",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P5",
+      "cite": "FAR 19.1403",
+      "jurisdiction": "Federal",
+      "score": 0.04447,
+      "bm25_rank": 7,
+      "vector_rank": 10
+    },
+    {
+      "label": "P6",
+      "cite": "FAR 19.1405",
+      "jurisdiction": "Federal",
+      "score": 0.04011,
+      "bm25_rank": 12,
+      "vector_rank": 20
+    },
+    {
+      "label": "P7",
+      "cite": "FAR 19.307",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P8",
+      "cite": "FAR 19.1406",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P9",
+      "cite": "FAR 19.203",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P10",
+      "cite": "FAR 19.203",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    }
+  ],
+  "jurisdictions": [
+    "Federal"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.4,
+  "warnings": [],
+  "id": "fed-recertify",
+  "jurisdiction_asked": "Federal"
+}

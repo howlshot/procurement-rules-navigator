@@ -1,0 +1,135 @@
+{
+  "question": "What is the largest sole-source award a federal agency can make to an SDVOSB for a requirement outside manufacturing?",
+  "status": "answered",
+  "answer": "Under federal rules, the largest sole-source award a contracting officer can make to an SDVOSB for a requirement outside manufacturing is $5 million. This limit applies when the anticipated award price, including options, does not exceed that amount for any NAICS code other than manufacturing. The rule is found in FAR 19.1406, which governs sole source awards to SDVOSB concerns.",
+  "citations": [
+    {
+      "label": "P8",
+      "quote": "(ii) $5 million for a requirement within any other NAICS code;",
+      "cite": "FAR 19.1406",
+      "link": "https://www.acquisition.gov/far/19.1406",
+      "document": "FAR Part 19",
+      "doc_id": "far-part-19",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [
+    {
+      "summary": "13 CFR 128.405 sets the non-manufacturing sole-source limit at $4,000,000 while FAR 19.1406 sets it at $5 million for the same federal SDVOSB sole-source situation; both documents are dated 2026-10/2026-10-01 so neither is clearly newer.",
+      "sources": [
+        {
+          "cite": "13 CFR 128.405",
+          "as_of": "2026-10-01",
+          "link": "https://www.ecfr.gov/current/title-13/section-128.405"
+        },
+        {
+          "cite": "FAR 19.1406",
+          "as_of": "2026-10",
+          "link": "https://www.acquisition.gov/far/19.1406"
+        }
+      ]
+    }
+  ],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "13 CFR 128.405",
+      "jurisdiction": "Federal",
+      "score": 0.04602,
+      "bm25_rank": 11,
+      "vector_rank": 2
+    },
+    {
+      "label": "P2",
+      "cite": "13 CFR 128.407",
+      "jurisdiction": "Federal",
+      "score": 0.0418,
+      "bm25_rank": 9,
+      "vector_rank": 17
+    },
+    {
+      "label": "P3",
+      "cite": "13 CFR 128.403",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P4",
+      "cite": "13 CFR 128.404",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P5",
+      "cite": "13 CFR 128.404",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P6",
+      "cite": "FAR 2.101",
+      "jurisdiction": "Federal",
+      "score": 0.05,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P7",
+      "cite": "FAR 2.101",
+      "jurisdiction": "Federal",
+      "score": 0.05,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P8",
+      "cite": "FAR 19.1406",
+      "jurisdiction": "Federal",
+      "score": 0.04839,
+      "bm25_rank": 3,
+      "vector_rank": 3
+    },
+    {
+      "label": "P9",
+      "cite": "FAR 19.1506",
+      "jurisdiction": "Federal",
+      "score": 0.04808,
+      "bm25_rank": 1,
+      "vector_rank": 6
+    },
+    {
+      "label": "P10",
+      "cite": "FAR 19.203",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P11",
+      "cite": "FAR 19.203",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    }
+  ],
+  "jurisdictions": [
+    "Federal"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.4,
+  "warnings": [],
+  "id": "fed-sdvosb-sole-source",
+  "jurisdiction_asked": "Federal"
+}

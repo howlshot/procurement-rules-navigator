@@ -1,0 +1,91 @@
+{
+  "question": "When can a New York State agency run an SDVOB set-aside procurement?",
+  "status": "answered",
+  "answer": "A New York State agency may conduct an SDVOB set-aside procurement at any time after considering a Preferred Source, without having to comply with the order of priority for selecting a procurement method. This is stated in the New York State Procurement Guidelines, which note that an agency may conduct an SDVOB set-aside procurement at any time after considering a Preferred Source. The guidelines also indicate that SDVOB set-asides are part of the order of purchasing priority, specifically at the second and third levels.",
+  "citations": [
+    {
+      "label": "P3",
+      "quote": "An Agency may conduct an SDVOB set-aside procurement at any time after considering a Preferred Source without having to comply with the order of priority for selecting a procurement set forth below.",
+      "cite": "NYS Procurement Guidelines, p. 8",
+      "link": "https://ogs.ny.gov/system/files/documents/2025/01/february-2025-nys-procurement-guidelines.pdf#page=8",
+      "document": "NYS Procurement Guidelines",
+      "doc_id": "nys-procurement-guidelines",
+      "jurisdiction": "New York State",
+      "as_of": "2025-02",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P6",
+      "quote": "Second: Centralized State Contracts (Commodity, Services & Technology), SDVOB Set-Aside",
+      "cite": "OGS MWBE and SDVOB guide, p. 2",
+      "link": "https://ogs.ny.gov/system/files/documents/2024/12/state-mwbe-and-sdvob-contracting-opportunities-final.pdf#page=2",
+      "document": "OGS MWBE and SDVOB guide",
+      "doc_id": "ogs-mwbe-sdvob-opportunities",
+      "jurisdiction": "New York State",
+      "as_of": "2024-12",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 5",
+      "jurisdiction": "New York State",
+      "score": 0.04356,
+      "bm25_rank": 13,
+      "vector_rank": 7
+    },
+    {
+      "label": "P2",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 6",
+      "jurisdiction": "New York State",
+      "score": 0.04129,
+      "bm25_rank": 9,
+      "vector_rank": 19
+    },
+    {
+      "label": "P3",
+      "cite": "NYS Procurement Guidelines, p. 8",
+      "jurisdiction": "New York State",
+      "score": 0.04399,
+      "bm25_rank": 20,
+      "vector_rank": 1
+    },
+    {
+      "label": "P4",
+      "cite": "NYS Procurement Guidelines, p. 1",
+      "jurisdiction": "New York State",
+      "score": 0.04057,
+      "bm25_rank": 17,
+      "vector_rank": 13
+    },
+    {
+      "label": "P5",
+      "cite": "NYS Procurement Guidelines, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.04026,
+      "bm25_rank": 10,
+      "vector_rank": 22
+    },
+    {
+      "label": "P6",
+      "cite": "OGS MWBE and SDVOB guide, p. 2",
+      "jurisdiction": "New York State",
+      "score": 0.04919,
+      "bm25_rank": 1,
+      "vector_rank": 3
+    }
+  ],
+  "jurisdictions": [
+    "New York State"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.4,
+  "warnings": [],
+  "id": "nys-sdvob-set-aside",
+  "jurisdiction_asked": "New York State"
+}

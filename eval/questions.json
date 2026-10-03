@@ -1,0 +1,494 @@
+{
+ "note": "Reference answers were checked against the source text by reading it. expect: every group must appear in the answer (any one phrase per group). disagreement: true means the sources do conflict and the answer should say so; null means either is acceptable.",
+ "questions": [
+  {
+   "id": "nys-general",
+   "jurisdiction": "New York State",
+   "question": "What is the general discretionary purchasing threshold for New York State agencies?",
+   "expect": [
+    [
+     "50,000"
+    ]
+   ],
+   "sources": [
+    "nys-discretionary-guidelines",
+    "nys-procurement-guidelines",
+    "ogs-mwbe-sdvob-opportunities"
+   ],
+   "answerable": true,
+   "disagreement": null,
+   "note": "Flagging the OGS guide's outdated MWBE/SDVOB figures here is accurate, so either is acceptable."
+  },
+  {
+   "id": "nys-sdvob",
+   "jurisdiction": "New York State",
+   "question": "How much can a New York State agency buy from a certified SDVOB without formal competitive bidding?",
+   "expect": [
+    [
+     "1,500,000",
+     "1.5 million"
+    ]
+   ],
+   "sources": [
+    "nys-discretionary-guidelines"
+   ],
+   "answerable": true,
+   "disagreement": true
+  },
+  {
+   "id": "nys-small-business",
+   "jurisdiction": "New York State",
+   "question": "What is the New York State discretionary threshold for purchases from New York State small businesses?",
+   "expect": [
+    [
+     "500,000"
+    ]
+   ],
+   "sources": [
+    "nys-discretionary-guidelines",
+    "nys-procurement-guidelines",
+    "ogs-mwbe-sdvob-opportunities"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nys-food",
+   "jurisdiction": "New York State",
+   "question": "What is the New York State discretionary threshold for buying food grown or produced in New York State?",
+   "expect": [
+    [
+     "200,000"
+    ]
+   ],
+   "sources": [
+    "nys-discretionary-guidelines",
+    "nys-procurement-guidelines",
+    "ogs-mwbe-sdvob-opportunities"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nys-contract-reporter",
+   "jurisdiction": "New York State",
+   "question": "At what amount must a New York State agency's discretionary purchase be advertised in the NYS Contract Reporter?",
+   "expect": [
+    [
+     "50,000"
+    ]
+   ],
+   "sources": [
+    "nys-discretionary-guidelines",
+    "nys-procurement-guidelines",
+    "ogs-mwbe-sdvob-opportunities"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nys-comptroller",
+   "jurisdiction": "New York State",
+   "question": "Above what amount do New York State agency contracts generally need prior approval from the State Comptroller?",
+   "expect": [
+    [
+     "50,000"
+    ]
+   ],
+   "sources": [
+    "nys-discretionary-guidelines",
+    "nys-procurement-guidelines",
+    "ogs-mwbe-sdvob-opportunities"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nys-priority",
+   "jurisdiction": "New York State",
+   "question": "What is the order of priority a New York State agency must follow when choosing how to buy something?",
+   "expect": [
+    [
+     "preferred source"
+    ],
+    [
+     "centralized"
+    ]
+   ],
+   "sources": [
+    "nys-discretionary-guidelines",
+    "nys-procurement-guidelines",
+    "ogs-mwbe-sdvob-opportunities"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nys-preferred-sources",
+   "jurisdiction": "New York State",
+   "question": "Who are New York State's preferred sources?",
+   "expect": [
+    [
+     "corcraft"
+    ],
+    [
+     "nysid",
+     "industries for the disabled"
+    ]
+   ],
+   "sources": [
+    "nys-discretionary-guidelines",
+    "nys-procurement-guidelines",
+    "ogs-mwbe-sdvob-opportunities"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nys-sdvob-set-aside",
+   "jurisdiction": "New York State",
+   "question": "When can a New York State agency run an SDVOB set-aside procurement?",
+   "expect": [
+    [
+     "preferred source"
+    ],
+    [
+     "any time",
+     "order of priority"
+    ]
+   ],
+   "sources": [
+    "nys-discretionary-guidelines",
+    "nys-procurement-guidelines",
+    "ogs-mwbe-sdvob-opportunities"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nyc-micro",
+   "jurisdiction": "New York City",
+   "question": "What is the NYC micropurchase limit for goods and services?",
+   "expect": [
+    [
+     "20,000"
+    ]
+   ],
+   "sources": [
+    "nyc-ppb-rules"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nyc-micro-construction",
+   "jurisdiction": "New York City",
+   "question": "What is the NYC micropurchase limit for construction?",
+   "expect": [
+    [
+     "35,000"
+    ]
+   ],
+   "sources": [
+    "nyc-ppb-rules"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nyc-small-purchase",
+   "jurisdiction": "New York City",
+   "question": "What is the New York City small purchase limit?",
+   "expect": [
+    [
+     "100,000"
+    ]
+   ],
+   "sources": [
+    "nyc-ppb-rules"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nyc-mwbe-ncsp",
+   "jurisdiction": "New York City",
+   "question": "What is the NYC M/WBE noncompetitive small purchase limit?",
+   "expect": [
+    [
+     "1,500,000",
+     "1.5 million",
+     "one million five hundred thousand"
+    ]
+   ],
+   "sources": [
+    "nyc-ppb-rules"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nyc-five-vendors",
+   "jurisdiction": "New York City",
+   "question": "For an NYC small purchase above the micropurchase limit, how many vendors must be solicited from the bidders list?",
+   "expect": [
+    [
+     "five",
+     "5"
+    ]
+   ],
+   "sources": [
+    "nyc-ppb-rules"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nyc-mwbe-quotes",
+   "jurisdiction": "New York City",
+   "question": "How many price quotes must an NYC contracting officer try to get for an M/WBE small purchase?",
+   "expect": [
+    [
+     "three",
+     "3"
+    ]
+   ],
+   "sources": [
+    "nyc-ppb-rules"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "nyc-human-services",
+   "jurisdiction": "New York City",
+   "question": "Can New York City agencies use the M/WBE small purchase method for human services?",
+   "expect": [
+    [
+     "human services"
+    ],
+    [
+     "not",
+     "no "
+    ]
+   ],
+   "sources": [
+    "nyc-ppb-rules"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "cuny-informal",
+   "jurisdiction": "CUNY",
+   "question": "Below what amount can CUNY use informal purchasing methods for general purchases?",
+   "expect": [
+    [
+     "250,000"
+    ]
+   ],
+   "sources": [
+    "cuny-procurement-policy"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "cuny-three-quotes",
+   "jurisdiction": "CUNY",
+   "question": "How many written quotes does CUNY require for purchases between $20,000 and $50,000?",
+   "expect": [
+    [
+     "three",
+     "3"
+    ]
+   ],
+   "sources": [
+    "cuny-procurement-policy"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "cuny-sdvob",
+   "jurisdiction": "CUNY",
+   "question": "Up to what amount can CUNY use informal purchasing methods when buying from a certified SDVOB?",
+   "expect": [
+    [
+     "500,000"
+    ]
+   ],
+   "sources": [
+    "cuny-procurement-policy"
+   ],
+   "answerable": true,
+   "disagreement": null
+  },
+  {
+   "id": "cuny-fair-price",
+   "jurisdiction": "CUNY",
+   "question": "When does CUNY consider a price fair and reasonable?",
+   "expect": [
+    [
+     "15%",
+     "15 percent"
+    ]
+   ],
+   "sources": [
+    "cuny-procurement-policy"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "fed-micro",
+   "jurisdiction": "Federal",
+   "question": "What is the federal micro-purchase threshold?",
+   "expect": [
+    [
+     "15,000"
+    ]
+   ],
+   "sources": [
+    "far-part-2",
+    "far-part-13"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "fed-sat",
+   "jurisdiction": "Federal",
+   "question": "What is the federal simplified acquisition threshold?",
+   "expect": [
+    [
+     "350,000"
+    ]
+   ],
+   "sources": [
+    "far-part-2",
+    "far-part-13",
+    "far-part-19"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "fed-sdvosb-set-aside",
+   "jurisdiction": "Federal",
+   "question": "When can a federal contracting officer set aside an acquisition for SDVOSB concerns?",
+   "expect": [
+    [
+     "two or more",
+     "at least two",
+     "2 or more"
+    ],
+    [
+     "fair market price",
+     "reasonable"
+    ]
+   ],
+   "sources": [
+    "far-part-19"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "fed-sdvosb-sole-source",
+   "jurisdiction": "Federal",
+   "question": "What is the largest sole-source award a federal agency can make to an SDVOSB for a requirement outside manufacturing?",
+   "expect": [
+    [
+     "5 million",
+     "5,000,000"
+    ]
+   ],
+   "sources": [
+    "far-part-19"
+   ],
+   "answerable": true,
+   "disagreement": true,
+   "note": "13 CFR 128.405 still says $4,000,000 (other) and $7,000,000 (manufacturing); FAR 19.1406 says $5 million and $8.5 million. Both are current official texts."
+  },
+  {
+   "id": "fed-ownership",
+   "jurisdiction": "Federal",
+   "question": "What share of a business must service-disabled veterans own and control for SBA SDVOSB certification?",
+   "expect": [
+    [
+     "51"
+    ]
+   ],
+   "sources": [
+    "cfr-13-128"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "fed-recertify",
+   "jurisdiction": "Federal",
+   "question": "How often must a certified SDVOSB recertify with SBA?",
+   "expect": [
+    [
+     "3 years",
+     "three years"
+    ]
+   ],
+   "sources": [
+    "cfr-13-128"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "fed-caregiver",
+   "jurisdiction": "Federal",
+   "question": "Under SBA's VetCert rules, can the spouse or permanent caregiver of a veteran with a permanent and total disability control an SDVOSB?",
+   "expect": [
+    [
+     "spouse",
+     "caregiver"
+    ],
+    [
+     "permanent and total",
+     "permanent",
+     "total"
+    ]
+   ],
+   "sources": [
+    "cfr-13-128"
+   ],
+   "answerable": true,
+   "disagreement": false
+  },
+  {
+   "id": "out-california",
+   "jurisdiction": "Other",
+   "question": "What is the micro-purchase threshold for California state agencies?",
+   "expect": null,
+   "sources": [],
+   "answerable": false,
+   "disagreement": false
+  },
+  {
+   "id": "out-new-jersey",
+   "jurisdiction": "Other",
+   "question": "What is the public bidding threshold for New Jersey counties?",
+   "expect": null,
+   "sources": [],
+   "answerable": false,
+   "disagreement": false
+  },
+  {
+   "id": "out-rates",
+   "jurisdiction": "Other",
+   "question": "What hourly rate should a software developer charge New York City?",
+   "expect": null,
+   "sources": [],
+   "answerable": false,
+   "disagreement": false
+  }
+ ]
+}

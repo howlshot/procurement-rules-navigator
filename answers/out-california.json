@@ -1,0 +1,58 @@
+{
+  "question": "What is the micro-purchase threshold for California state agencies?",
+  "status": "not_found",
+  "answer": "The provided passages do not contain information about the micro-purchase threshold for California state agencies. The available documents cover federal procurement rules and New York State purchasing guidelines, but do not address California state agency thresholds.",
+  "citations": [],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "FAR 2.101",
+      "jurisdiction": "Federal",
+      "score": 0.06411,
+      "bm25_rank": 5,
+      "vector_rank": 7
+    },
+    {
+      "label": "P2",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 3",
+      "jurisdiction": "New York State",
+      "score": 0.04767,
+      "bm25_rank": 6,
+      "vector_rank": 2
+    },
+    {
+      "label": "P3",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.03813,
+      "bm25_rank": 15,
+      "vector_rank": 25
+    },
+    {
+      "label": "P4",
+      "cite": "NYS Procurement Guidelines, p. 10",
+      "jurisdiction": "New York State",
+      "score": 0.04187,
+      "bm25_rank": 8,
+      "vector_rank": 18
+    },
+    {
+      "label": "P5",
+      "cite": "OGS MWBE and SDVOB guide, p. 17",
+      "jurisdiction": "New York State",
+      "score": 0.0484,
+      "bm25_rank": 2,
+      "vector_rank": 4
+    }
+  ],
+  "jurisdictions": [
+    "New York State"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.4,
+  "warnings": [],
+  "id": "out-california",
+  "jurisdiction_asked": "Other"
+}

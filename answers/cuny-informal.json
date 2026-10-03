@@ -1,0 +1,71 @@
+{
+  "question": "Below what amount can CUNY use informal purchasing methods for general purchases?",
+  "status": "answered",
+  "answer": "CUNY may use informal purchasing methods for general purchases that are less than $250,000. This rule is set by CUNY's Procurement Policy and Procedures (2019). The policy also notes that the State Comptroller may authorize a different amount.",
+  "citations": [
+    {
+      "label": "P2",
+      "quote": "Purchasing Departments may use Informal Purchasing Methods for general purchases that are less than $250,000",
+      "cite": "CUNY Procurement Policy (2019), p. 7",
+      "link": "https://www1.cuny.edu/sites/selltocuny/wp-content/uploads/sites/50/2020/01/CUNY-Procurement-Policy-Amendments-Adopted-by-Board-of-Trusteees-12-16-19.pdf#page=7",
+      "document": "CUNY Procurement Policy (2019)",
+      "doc_id": "cuny-procurement-policy",
+      "jurisdiction": "CUNY",
+      "as_of": "2019-12",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "CUNY 2025-26 guidelines memo, p. 2",
+      "jurisdiction": "CUNY",
+      "score": 0.04287,
+      "bm25_rank": 10,
+      "vector_rank": 12
+    },
+    {
+      "label": "P2",
+      "cite": "CUNY Procurement Policy (2019), p. 7",
+      "jurisdiction": "CUNY",
+      "score": 0.04959,
+      "bm25_rank": 1,
+      "vector_rank": 2
+    },
+    {
+      "label": "P3",
+      "cite": "CUNY Procurement Policy (2019), p. 9",
+      "jurisdiction": "CUNY",
+      "score": 0.048,
+      "bm25_rank": 4,
+      "vector_rank": 3
+    },
+    {
+      "label": "P4",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 2",
+      "jurisdiction": "New York State",
+      "score": 0.02691,
+      "bm25_rank": 12,
+      "vector_rank": 19
+    },
+    {
+      "label": "P5",
+      "cite": "FAR 13.201",
+      "jurisdiction": "Federal",
+      "score": 0.02527,
+      "bm25_rank": 11,
+      "vector_rank": 32
+    }
+  ],
+  "jurisdictions": [
+    "CUNY"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.4,
+  "warnings": [],
+  "id": "cuny-informal",
+  "jurisdiction_asked": "CUNY"
+}

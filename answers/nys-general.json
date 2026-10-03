@@ -1,0 +1,111 @@
+{
+  "question": "What is the general discretionary purchasing threshold for New York State agencies?",
+  "status": "answered",
+  "answer": "The general discretionary purchasing threshold for New York State agencies is $50,000. This applies to purchases of commodities, services, and technology not available from Preferred Sources or OGS centralized contracts. Purchases up to this threshold are not subject to formal competitive bidding requirements but must comply with advertising and internal policy requirements.",
+  "citations": [
+    {
+      "label": "P1",
+      "quote": "the discretionary buying threshold for commodities, services, and technology not available from Preferred Sources or from OGS centralized contracts is typically $50,000 for State agencies",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 3",
+      "link": "https://ogs.ny.gov/system/files/documents/2025/08/2024-nys-discretionary-purchasing-guidelines-revised-august-2025-for-posting.pdf#page=3",
+      "document": "NYS Discretionary Purchasing Guidelines",
+      "doc_id": "nys-discretionary-guidelines",
+      "jurisdiction": "New York State",
+      "as_of": "2025-08",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P2",
+      "quote": "It generally applies to purchases up to $50,000 (or up to $1,500,000 in certain instances, as described below) for commodities, services or technology",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 1",
+      "link": "https://ogs.ny.gov/system/files/documents/2025/08/2024-nys-discretionary-purchasing-guidelines-revised-august-2025-for-posting.pdf#page=1",
+      "document": "NYS Discretionary Purchasing Guidelines",
+      "doc_id": "nys-discretionary-guidelines",
+      "jurisdiction": "New York State",
+      "as_of": "2025-08",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P1",
+      "quote": "Purchases up to the discretionary buying threshold are not subject to the formal competitive bidding requirements set forth in New York State Finance Law",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 3",
+      "link": "https://ogs.ny.gov/system/files/documents/2025/08/2024-nys-discretionary-purchasing-guidelines-revised-august-2025-for-posting.pdf#page=3",
+      "document": "NYS Discretionary Purchasing Guidelines",
+      "doc_id": "nys-discretionary-guidelines",
+      "jurisdiction": "New York State",
+      "as_of": "2025-08",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [
+    {
+      "summary": "P1 (2025-08) states the MWBE/SDVOB threshold is $1,500,000 while P4 (2024-12) states it is $750,000; P1 is the newer document.",
+      "sources": [
+        {
+          "cite": "NYS Discretionary Purchasing Guidelines, p. 3",
+          "as_of": "2025-08",
+          "link": "https://ogs.ny.gov/system/files/documents/2025/08/2024-nys-discretionary-purchasing-guidelines-revised-august-2025-for-posting.pdf#page=3"
+        },
+        {
+          "cite": "OGS MWBE and SDVOB guide, p. 17",
+          "as_of": "2024-12",
+          "link": "https://ogs.ny.gov/system/files/documents/2024/12/state-mwbe-and-sdvob-contracting-opportunities-final.pdf#page=17"
+        }
+      ]
+    }
+  ],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 3",
+      "jurisdiction": "New York State",
+      "score": 0.04919,
+      "bm25_rank": 3,
+      "vector_rank": 1
+    },
+    {
+      "label": "P2",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 1",
+      "jurisdiction": "New York State",
+      "score": 0.0462,
+      "bm25_rank": 8,
+      "vector_rank": 4
+    },
+    {
+      "label": "P3",
+      "cite": "NYC Charter \u00a7 112 (in NYS Procurement Guidelines), p. 17",
+      "jurisdiction": "New York State",
+      "score": 0.03918,
+      "bm25_rank": 27,
+      "vector_rank": 10
+    },
+    {
+      "label": "P4",
+      "cite": "OGS MWBE and SDVOB guide, p. 17",
+      "jurisdiction": "New York State",
+      "score": 0.04562,
+      "bm25_rank": 11,
+      "vector_rank": 3
+    },
+    {
+      "label": "P5",
+      "cite": "OGS MWBE and SDVOB guide, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.04319,
+      "bm25_rank": 12,
+      "vector_rank": 9
+    }
+  ],
+  "jurisdictions": [
+    "New York State"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.1,
+  "warnings": [],
+  "id": "nys-general",
+  "jurisdiction_asked": "New York State"
+}

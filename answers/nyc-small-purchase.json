@@ -1,0 +1,135 @@
+{
+  "question": "What is the New York City small purchase limit?",
+  "status": "answered",
+  "answer": "The New York City small purchase limit is $100,000. This limit applies to procurements of goods and services, with a separate threshold for construction. The rule is established by the New York City Procurement Policy Board (PPB) Rules.",
+  "citations": [
+    {
+      "label": "P2",
+      "quote": "Small purchases are those procurements in value of not more than $100,000",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=92",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P2",
+      "quote": "This collectively shall be known as the small purchase limit.",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=92",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P3",
+      "quote": "for procurements of goods and all services except construction valued over $20,000 through the small purchase limit",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 93",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=93",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYC PPB Rules \u00a7 3-09, p. 95",
+      "jurisdiction": "New York City",
+      "score": 0.04474,
+      "bm25_rank": 1,
+      "vector_rank": 17
+    },
+    {
+      "label": "P2",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "jurisdiction": "New York City",
+      "score": 0.04233,
+      "bm25_rank": 15,
+      "vector_rank": 9
+    },
+    {
+      "label": "P3",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 93",
+      "jurisdiction": "New York City",
+      "score": 0.04167,
+      "bm25_rank": 31,
+      "vector_rank": 1
+    },
+    {
+      "label": "P4",
+      "cite": "NYC PPB Rules \u00a7 3-13, p. 107",
+      "jurisdiction": "New York City",
+      "score": 0.0411,
+      "bm25_rank": 13,
+      "vector_rank": 15
+    },
+    {
+      "label": "P5",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 5",
+      "jurisdiction": "New York State",
+      "score": 0.03279,
+      "bm25_rank": 2,
+      "vector_rank": 2
+    },
+    {
+      "label": "P6",
+      "cite": "CUNY Procurement Policy (2019), p. 8",
+      "jurisdiction": "CUNY",
+      "score": 0.03126,
+      "bm25_rank": 4,
+      "vector_rank": 6
+    },
+    {
+      "label": "P7",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.02896,
+      "bm25_rank": 16,
+      "vector_rank": 5
+    },
+    {
+      "label": "P8",
+      "cite": "OGS MWBE and SDVOB guide, p. 18",
+      "jurisdiction": "New York State",
+      "score": 0.03037,
+      "bm25_rank": 10,
+      "vector_rank": 4
+    },
+    {
+      "label": "P9",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P10",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    }
+  ],
+  "jurisdictions": [
+    "New York City"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "nyc-small-purchase",
+  "jurisdiction_asked": "New York City"
+}

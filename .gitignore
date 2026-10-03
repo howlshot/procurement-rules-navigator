@@ -1,0 +1,9 @@
+sources/*.pdf
+sources/*.html
+sources/*.xml
+__pycache__/
+*.pyc
+.DS_Store
+runs/
+index/
+_site/

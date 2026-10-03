@@ -1,0 +1,115 @@
+{
+  "question": "For an NYC small purchase above the micropurchase limit, how many vendors must be solicited from the bidders list?",
+  "status": "answered",
+  "answer": "For an NYC small purchase above the micropurchase limit, at least five vendors must be solicited from the appropriate citywide small purchases bidders list. If the bidders list consists of fewer than five vendors, all vendors on the list must be solicited. This rule is set by New York City.",
+  "citations": [
+    {
+      "label": "P1",
+      "quote": "at least five vendors must be solicited at random from the appropriate citywide small purchases bidders list established by the CCPO",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=92",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P1",
+      "quote": "except where the bidders list consists of fewer than five vendors, in which case all vendors on the list must be solicited",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=92",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "jurisdiction": "New York City",
+      "score": 0.05,
+      "bm25_rank": 1,
+      "vector_rank": 1
+    },
+    {
+      "label": "P2",
+      "cite": "NYC PPB Rules \u00a7 3-02, p. 74",
+      "jurisdiction": "New York City",
+      "score": 0.04514,
+      "bm25_rank": 2,
+      "vector_rank": 14
+    },
+    {
+      "label": "P3",
+      "cite": "NYC PPB Rules \u00a7 3-02, p. 60",
+      "jurisdiction": "New York City",
+      "score": 0.04317,
+      "bm25_rank": 10,
+      "vector_rank": 11
+    },
+    {
+      "label": "P4",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 6",
+      "jurisdiction": "New York State",
+      "score": 0.01587,
+      "bm25_rank": null,
+      "vector_rank": 4
+    },
+    {
+      "label": "P5",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.01515,
+      "bm25_rank": null,
+      "vector_rank": 7
+    },
+    {
+      "label": "P6",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 5",
+      "jurisdiction": "New York State",
+      "score": 0.01471,
+      "bm25_rank": null,
+      "vector_rank": 9
+    },
+    {
+      "label": "P7",
+      "cite": "OGS MWBE and SDVOB guide, p. 18",
+      "jurisdiction": "New York State",
+      "score": 0.01538,
+      "bm25_rank": null,
+      "vector_rank": 6
+    },
+    {
+      "label": "P8",
+      "cite": "NYC PPB Rules \u00a7 3-03, p. 5",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P9",
+      "cite": "NYC PPB Rules \u00a7 3-03, p. 6",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    }
+  ],
+  "jurisdictions": [
+    "New York City"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "nyc-five-vendors",
+  "jurisdiction_asked": "New York City"
+}

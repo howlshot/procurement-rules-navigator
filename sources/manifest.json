@@ -1,0 +1,115 @@
+{
+  "note": "Public rule documents the navigator answers from. Files are not committed; scripts/fetch_sources.py downloads them from these links.",
+  "documents": [
+    {
+      "id": "nys-procurement-guidelines",
+      "title": "NYS Procurement Guidelines (revised February 2025)",
+      "short": "NYS Procurement Guidelines",
+      "jurisdiction": "New York State",
+      "publisher": "NYS Office of General Services / Procurement Council",
+      "format": "pdf",
+      "file": "nys-procurement-guidelines.pdf",
+      "url": "https://ogs.ny.gov/system/files/documents/2025/01/february-2025-nys-procurement-guidelines.pdf",
+      "as_of": "2025-02"
+    },
+    {
+      "id": "nys-discretionary-guidelines",
+      "title": "NYS Discretionary Purchasing Guidelines (revised August 2025)",
+      "short": "NYS Discretionary Purchasing Guidelines",
+      "jurisdiction": "New York State",
+      "publisher": "NYS Procurement Council",
+      "format": "pdf",
+      "file": "nys-discretionary-guidelines.pdf",
+      "url": "https://ogs.ny.gov/system/files/documents/2025/08/2024-nys-discretionary-purchasing-guidelines-revised-august-2025-for-posting.pdf",
+      "as_of": "2025-08"
+    },
+    {
+      "id": "ogs-mwbe-sdvob-opportunities",
+      "title": "State MWBE and SDVOB Contracting Opportunities (December 2024)",
+      "short": "OGS MWBE and SDVOB guide",
+      "jurisdiction": "New York State",
+      "publisher": "NYS Office of General Services",
+      "format": "pdf",
+      "file": "ogs-mwbe-sdvob-opportunities.pdf",
+      "url": "https://ogs.ny.gov/system/files/documents/2024/12/state-mwbe-and-sdvob-contracting-opportunities-final.pdf",
+      "as_of": "2024-12"
+    },
+    {
+      "id": "cuny-procurement-policy",
+      "title": "CUNY Procurement Policy, amendments adopted by the Board of Trustees (December 16, 2019)",
+      "short": "CUNY Procurement Policy (2019)",
+      "jurisdiction": "CUNY",
+      "publisher": "City University of New York",
+      "format": "pdf",
+      "file": "cuny-procurement-policy.pdf",
+      "url": "https://www1.cuny.edu/sites/selltocuny/wp-content/uploads/sites/50/2020/01/CUNY-Procurement-Policy-Amendments-Adopted-by-Board-of-Trusteees-12-16-19.pdf",
+      "as_of": "2019-12"
+    },
+    {
+      "id": "cuny-jjay-2025-guidelines",
+      "title": "University Procurement Policies and Guidelines for 2025-2026, John Jay College memo (June 30, 2025)",
+      "short": "CUNY 2025-26 guidelines memo",
+      "jurisdiction": "CUNY",
+      "publisher": "John Jay College of Criminal Justice, CUNY",
+      "format": "pdf",
+      "file": "cuny-jjay-2025-guidelines.pdf",
+      "url": "https://www.jjay.cuny.edu/sites/default/files/2025-06/VP%20Flower%20Message-%20University%20Procurement%20Policies%20and%20Guidelines%20063025.pdf",
+      "as_of": "2025-06"
+    },
+    {
+      "id": "nyc-ppb-rules",
+      "title": "NYC Procurement Policy Board Rules (June 2026 compilation)",
+      "short": "NYC PPB Rules",
+      "jurisdiction": "New York City",
+      "publisher": "NYC Mayor's Office of Contract Services",
+      "format": "pdf",
+      "file": "nyc-ppb-rules.pdf",
+      "url": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf",
+      "as_of": "2026-06"
+    },
+    {
+      "id": "far-part-2",
+      "title": "FAR Part 2, Definitions of Words and Terms",
+      "short": "FAR Part 2",
+      "jurisdiction": "Federal",
+      "publisher": "acquisition.gov",
+      "format": "far-html",
+      "file": "far-part-2.html",
+      "url": "https://www.acquisition.gov/far/part-2",
+      "as_of": "2026-10"
+    },
+    {
+      "id": "far-part-13",
+      "title": "FAR Part 13, Simplified Acquisition Procedures",
+      "short": "FAR Part 13",
+      "jurisdiction": "Federal",
+      "publisher": "acquisition.gov",
+      "format": "far-html",
+      "file": "far-part-13.html",
+      "url": "https://www.acquisition.gov/far/part-13",
+      "as_of": "2026-09"
+    },
+    {
+      "id": "far-part-19",
+      "title": "FAR Part 19, Small Business Programs",
+      "short": "FAR Part 19",
+      "jurisdiction": "Federal",
+      "publisher": "acquisition.gov",
+      "format": "far-html",
+      "file": "far-part-19.html",
+      "url": "https://www.acquisition.gov/far/part-19",
+      "as_of": "2026-10"
+    },
+    {
+      "id": "cfr-13-128",
+      "title": "13 CFR Part 128, Veteran Small Business Certification Program (VetCert)",
+      "short": "13 CFR Part 128",
+      "jurisdiction": "Federal",
+      "publisher": "eCFR",
+      "format": "ecfr-xml",
+      "file": "cfr-13-128.xml",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-01/title-13.xml?part=128",
+      "as_of": "2026-10-01"
+    }
+  ]
+}

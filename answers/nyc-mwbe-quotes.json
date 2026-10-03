@@ -1,0 +1,103 @@
+{
+  "question": "How many price quotes must an NYC contracting officer try to get for an M/WBE small purchase?",
+  "status": "answered",
+  "answer": "For an M/WBE small purchase, a New York City contracting officer must attempt to obtain at least three price quotes from M/WBE vendors or document their inability to do so. This rule is found in the NYC PPB Rules for small purchases.",
+  "citations": [
+    {
+      "label": "P1",
+      "quote": "the Contracting Officer must attempt to obtain at least three price quotes from M/WBE vendors or document their inability to do so",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "link": "https://www.nyc.gov/assets/mocs/downloads/Regulations/PPB/PPBRules.pdf#page=92",
+      "document": "NYC PPB Rules",
+      "doc_id": "nyc-ppb-rules",
+      "jurisdiction": "New York City",
+      "as_of": "2026-06",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYC PPB Rules \u00a7 3-08, p. 92",
+      "jurisdiction": "New York City",
+      "score": 0.05,
+      "bm25_rank": 1,
+      "vector_rank": 1
+    },
+    {
+      "label": "P2",
+      "cite": "NYC PPB Rules \u00a7 3-02, p. 78",
+      "jurisdiction": "New York City",
+      "score": 0.03648,
+      "bm25_rank": 16,
+      "vector_rank": 32
+    },
+    {
+      "label": "P3",
+      "cite": "FAR 2.101",
+      "jurisdiction": "Federal",
+      "score": 0.03333,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P4",
+      "cite": "CUNY Procurement Policy (2019), p. 8",
+      "jurisdiction": "CUNY",
+      "score": 0.02867,
+      "bm25_rank": 15,
+      "vector_rank": 7
+    },
+    {
+      "label": "P5",
+      "cite": "FAR 13.106",
+      "jurisdiction": "Federal",
+      "score": 0.0264,
+      "bm25_rank": 10,
+      "vector_rank": 25
+    },
+    {
+      "label": "P6",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 5",
+      "jurisdiction": "New York State",
+      "score": 0.02604,
+      "bm25_rank": 8,
+      "vector_rank": 31
+    },
+    {
+      "label": "P7",
+      "cite": "FAR 13.203",
+      "jurisdiction": "Federal",
+      "score": 0.025,
+      "bm25_rank": 22,
+      "vector_rank": 20
+    },
+    {
+      "label": "P8",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P9",
+      "cite": "NYC Charter \u00a7 311 (in NYC PPB Rules), p. 182",
+      "jurisdiction": "New York City",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    }
+  ],
+  "jurisdictions": [
+    "New York City"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.4,
+  "warnings": [],
+  "id": "nyc-mwbe-quotes",
+  "jurisdiction_asked": "New York City"
+}

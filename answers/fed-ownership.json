@@ -1,0 +1,107 @@
+{
+  "question": "What share of a business must service-disabled veterans own and control for SBA SDVOSB certification?",
+  "status": "answered",
+  "answer": "For SBA SDVOSB certification, one or more service-disabled veterans must unconditionally and directly own at least 51 percent of the concern. The same service-disabled veterans must also control both the long-term decision-making and day-to-day operations of the business. This is a federal rule under 13 CFR part 128.",
+  "citations": [
+    {
+      "label": "P1",
+      "quote": "To qualify as a SDVOSB, one or more service-disabled veterans must unconditionally and directly own at least 51 percent of the concern.",
+      "cite": "13 CFR 128.202",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.202",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P3",
+      "quote": "Control by one or more qualifying veterans means that one or more qualifying veterans controls both the long-term decision-making and the day-to-day operations of the Applicant or Participant.",
+      "cite": "13 CFR 128.203",
+      "link": "https://www.ecfr.gov/current/title-13/section-128.203",
+      "document": "13 CFR Part 128",
+      "doc_id": "cfr-13-128",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10-01",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "13 CFR 128.202",
+      "jurisdiction": "Federal",
+      "score": 0.04651,
+      "bm25_rank": 6,
+      "vector_rank": 5
+    },
+    {
+      "label": "P2",
+      "cite": "13 CFR 128.202",
+      "jurisdiction": "Federal",
+      "score": 0.0458,
+      "bm25_rank": 7,
+      "vector_rank": 6
+    },
+    {
+      "label": "P3",
+      "cite": "13 CFR 128.203",
+      "jurisdiction": "Federal",
+      "score": 0.04555,
+      "bm25_rank": 4,
+      "vector_rank": 10
+    },
+    {
+      "label": "P4",
+      "cite": "13 CFR 128.307",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P5",
+      "cite": "FAR 19.307",
+      "jurisdiction": "Federal",
+      "score": 0.04562,
+      "bm25_rank": 3,
+      "vector_rank": 11
+    },
+    {
+      "label": "P6",
+      "cite": "FAR 2.101",
+      "jurisdiction": "Federal",
+      "score": 0.04261,
+      "bm25_rank": 14,
+      "vector_rank": 9
+    },
+    {
+      "label": "P7",
+      "cite": "FAR 19.1401",
+      "jurisdiction": "Federal",
+      "score": 0.04188,
+      "bm25_rank": 24,
+      "vector_rank": 4
+    },
+    {
+      "label": "P8",
+      "cite": "FAR 19.1403",
+      "jurisdiction": "Federal",
+      "score": 0.03898,
+      "bm25_rank": 12,
+      "vector_rank": 25
+    }
+  ],
+  "jurisdictions": [
+    "Federal"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "fed-ownership",
+  "jurisdiction_asked": "Federal"
+}

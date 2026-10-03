@@ -1,0 +1,87 @@
+{
+  "question": "What is the federal micro-purchase threshold?",
+  "status": "answered",
+  "answer": "The federal micro-purchase threshold is $15,000. This rule is defined in the Federal Acquisition Regulation (FAR) 2.101. The threshold has specific exceptions, such as $2,000 for construction and $2,500 for services subject to the Service Contract Labor Standards.",
+  "citations": [
+    {
+      "label": "P3",
+      "quote": "Micro-purchase threshold means $15,000, except it means- (1) For acquisitions of construction subject to 40 U.S.C. chapter 31, subchapter IV, Wage Rate Requirements (Construction), $2,000;",
+      "cite": "FAR 2.101",
+      "link": "https://www.acquisition.gov/far/2.101",
+      "document": "FAR Part 2",
+      "doc_id": "far-part-2",
+      "jurisdiction": "Federal",
+      "as_of": "2026-10",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "13 CFR 128.404",
+      "jurisdiction": "Federal",
+      "score": 0.03873,
+      "bm25_rank": 9,
+      "vector_rank": 31
+    },
+    {
+      "label": "P2",
+      "cite": "13 CFR 128.403",
+      "jurisdiction": "Federal",
+      "score": 0.0,
+      "bm25_rank": null,
+      "vector_rank": null
+    },
+    {
+      "label": "P3",
+      "cite": "FAR 2.101",
+      "jurisdiction": "Federal",
+      "score": 0.0984,
+      "bm25_rank": 4,
+      "vector_rank": 2
+    },
+    {
+      "label": "P4",
+      "cite": "FAR 19.201",
+      "jurisdiction": "Federal",
+      "score": 0.04356,
+      "bm25_rank": 7,
+      "vector_rank": 13
+    },
+    {
+      "label": "P5",
+      "cite": "FAR 19.1505",
+      "jurisdiction": "Federal",
+      "score": 0.04143,
+      "bm25_rank": 3,
+      "vector_rank": 28
+    },
+    {
+      "label": "P6",
+      "cite": "FAR 13.201",
+      "jurisdiction": "Federal",
+      "score": 0.04959,
+      "bm25_rank": 2,
+      "vector_rank": 1
+    },
+    {
+      "label": "P7",
+      "cite": "FAR 13.003",
+      "jurisdiction": "Federal",
+      "score": 0.04725,
+      "bm25_rank": 5,
+      "vector_rank": 4
+    }
+  ],
+  "jurisdictions": [
+    "Federal"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.3,
+  "warnings": [],
+  "id": "fed-micro",
+  "jurisdiction_asked": "Federal"
+}

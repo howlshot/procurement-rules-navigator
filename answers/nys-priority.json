@@ -1,0 +1,107 @@
+{
+  "question": "What is the order of priority a New York State agency must follow when choosing how to buy something?",
+  "status": "answered",
+  "answer": "New York State agencies must follow a four-step order of purchasing priority. First, they should use Preferred Source offerings; second, OGS centralized services and technology contracts or SDVOB set-asides; third, established agency or multi-agency contracts; and fourth, conduct their own procurement, including discretionary spending.",
+  "citations": [
+    {
+      "label": "P2",
+      "quote": "First: Preferred source offerings. Second: OGS centralized services and technology contracts",
+      "cite": "NYS Procurement Guidelines, p. 8",
+      "link": "https://ogs.ny.gov/system/files/documents/2025/01/february-2025-nys-procurement-guidelines.pdf#page=8",
+      "document": "NYS Procurement Guidelines",
+      "doc_id": "nys-procurement-guidelines",
+      "jurisdiction": "New York State",
+      "as_of": "2025-02",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P5",
+      "quote": "First: Preferred Sources (DOCCS, Corcraft, NYS PSP, NYSID) Second: Centralized State Contracts (Commodity, Services & Technology), SDVOB Set-Aside",
+      "cite": "OGS MWBE and SDVOB guide, p. 4",
+      "link": "https://ogs.ny.gov/system/files/documents/2024/12/state-mwbe-and-sdvob-contracting-opportunities-final.pdf#page=4",
+      "document": "OGS MWBE and SDVOB guide",
+      "doc_id": "ogs-mwbe-sdvob-opportunities",
+      "jurisdiction": "New York State",
+      "as_of": "2024-12",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P5",
+      "quote": "Third: Agency or Multi-Agency Established Contracts - established by an agency/multiple agencies",
+      "cite": "OGS MWBE and SDVOB guide, p. 4",
+      "link": "https://ogs.ny.gov/system/files/documents/2024/12/state-mwbe-and-sdvob-contracting-opportunities-final.pdf#page=4",
+      "document": "OGS MWBE and SDVOB guide",
+      "doc_id": "ogs-mwbe-sdvob-opportunities",
+      "jurisdiction": "New York State",
+      "as_of": "2024-12",
+      "verification": "exact",
+      "similarity": 1.0
+    },
+    {
+      "label": "P5",
+      "quote": "Fourth: Agency Conducts Its Own Procurement, Including Discretionary Spending ($50,000/$750,000 MWBE/SDVOB/SBE)",
+      "cite": "OGS MWBE and SDVOB guide, p. 4",
+      "link": "https://ogs.ny.gov/system/files/documents/2024/12/state-mwbe-and-sdvob-contracting-opportunities-final.pdf#page=4",
+      "document": "OGS MWBE and SDVOB guide",
+      "doc_id": "ogs-mwbe-sdvob-opportunities",
+      "jurisdiction": "New York State",
+      "as_of": "2024-12",
+      "verification": "exact",
+      "similarity": 1.0
+    }
+  ],
+  "removed": [],
+  "disagreements": [],
+  "retrieved": [
+    {
+      "label": "P1",
+      "cite": "NYS Discretionary Purchasing Guidelines, p. 6",
+      "jurisdiction": "New York State",
+      "score": 0.04006,
+      "bm25_rank": 13,
+      "vector_rank": 19
+    },
+    {
+      "label": "P2",
+      "cite": "NYS Procurement Guidelines, p. 8",
+      "jurisdiction": "New York State",
+      "score": 0.04881,
+      "bm25_rank": 1,
+      "vector_rank": 4
+    },
+    {
+      "label": "P3",
+      "cite": "NYS Procurement Guidelines, p. 13",
+      "jurisdiction": "New York State",
+      "score": 0.0484,
+      "bm25_rank": 4,
+      "vector_rank": 2
+    },
+    {
+      "label": "P4",
+      "cite": "NYS Procurement Guidelines, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.04615,
+      "bm25_rank": 6,
+      "vector_rank": 6
+    },
+    {
+      "label": "P5",
+      "cite": "OGS MWBE and SDVOB guide, p. 4",
+      "jurisdiction": "New York State",
+      "score": 0.04773,
+      "bm25_rank": 7,
+      "vector_rank": 1
+    }
+  ],
+  "jurisdictions": [
+    "New York State"
+  ],
+  "model": "qwen3.8-27b-mlx",
+  "seconds": 0.4,
+  "warnings": [],
+  "id": "nys-priority",
+  "jurisdiction_asked": "New York State"
+}
