@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -31,7 +32,7 @@ def embedder(base_url: str | None):
 
     from .llm import ModelError
 
-    local = OpenAICompatible("unused", base_url or "http://localhost:1234/v1")
+    local = OpenAICompatible("unused", base_url or os.environ.get("NAVIGATOR_EMBED_URL", "http://localhost:1234/v1"))
     lock = threading.Lock()
     memo: dict[str, list[float]] = {}
 
@@ -59,7 +60,7 @@ def main(argv: list[str] | None = None) -> int:
     sub = parser.add_subparsers(dest="command", required=True)
     b = sub.add_parser("build", help="Read the sources and build the search index.")
     b.add_argument("--no-embeddings", action="store_true", help="Keyword search only.")
-    b.add_argument("--base-url")
+    b.add_argument("--embed-url", help="Embedding server. Default $NAVIGATOR_EMBED_URL or http://localhost:1234/v1.")
     for name in ("ask", "serve"):
         p = sub.add_parser(name)
         if name == "ask":
@@ -69,14 +70,15 @@ def main(argv: list[str] | None = None) -> int:
             p.add_argument("--port", type=int, default=8766)
         p.add_argument("--provider", default="local", choices=["local", "anthropic"])
         p.add_argument("--model")
-        p.add_argument("--base-url")
+        p.add_argument("--base-url", help="Chat server. Default http://localhost:1234/v1.")
+        p.add_argument("--embed-url", help="Embedding server. Default $NAVIGATOR_EMBED_URL or the chat server's default.")
         p.add_argument("--cache", default="runs/cache")
     args = parser.parse_args(argv)
     docs = load_manifest(ROOT)
 
     if args.command == "build":
         passages = load_passages(ROOT, docs)
-        vectors = None if args.no_embeddings else search.embed_passages(passages, embedder(args.base_url), ROOT / "index/embeddings-cache.json")
+        vectors = None if args.no_embeddings else search.embed_passages(passages, embedder(args.embed_url), ROOT / "index/embeddings-cache.json")
         search.save(INDEX, passages, vectors)
         print(f"{len(passages)} passages from {len({p.doc for p in passages})} documents -> {INDEX.relative_to(ROOT)}")
         return 0
@@ -86,7 +88,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     index = search.load(INDEX, docs)
     provider = Cached(make_provider(args.provider, args.model, args.base_url), args.cache)
-    embed = embedder(args.base_url) if index.vectors else None
+    embed = embedder(args.embed_url) if index.vectors else None
 
     if args.command == "serve":
         from .server import serve

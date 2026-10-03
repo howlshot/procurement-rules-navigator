@@ -68,6 +68,16 @@ The second conflict was not known when the question was written. The navigator f
 - Earlier runs scored 93% to 96% correct before those changes.
 - A fresh set of questions is the honest next test.
 
+## Models tested
+
+| | Qwen 3.8 27B (LM Studio) | Qwen3.8-Flash-Next (mlx-serve) |
+|---|---:|---:|
+| Answers correct | 27/27 | 27/27 |
+| Real conflicts flagged | 2/2 | 2/2 |
+| False conflict flags | 0 | 0 |
+
+Same results. The sample answers use the 27B. Flash-Next results: [`eval/flash-next/`](eval/flash-next).
+
 ## Run it
 
 You need Python 3.11 or later, poppler (`brew install poppler`), and [LM Studio](https://lmstudio.ai) or another OpenAI-compatible server with a chat model and an embedding model. Load both, so the server does not swap them in and out:
@@ -80,6 +90,8 @@ python3 -m navigator build            # passages and embeddings, about 10 second
 python3 -m navigator ask "What is the NYC micropurchase limit for construction?"
 python3 -m navigator serve            # web page on http://127.0.0.1:8766
 ```
+
+For mlx-serve, pass `--base-url http://127.0.0.1:1237/v1 --model <id>`, set `JSON_SCHEMA_MODE=prompt` (its schema-enforced output is about 7 times slower), and point `--embed-url` at any server running the nomic embedding model.
 
 `--provider anthropic` uses a hosted model for answers when `ANTHROPIC_API_KEY` is set; search still uses the local embeddings. The published results do not use it.
 

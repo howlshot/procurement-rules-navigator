@@ -56,12 +56,16 @@ def main() -> None:
     parser.add_argument("--only", action="append", default=[])
     parser.add_argument("--provider", default="local")
     parser.add_argument("--model")
+    parser.add_argument("--base-url")
+    parser.add_argument("--embed-url")
+    parser.add_argument("--out", default=".", help="Folder for answers/ and eval results; default the repo itself.")
     args = parser.parse_args()
+    out_root = ROOT / args.out
 
     docs = load_manifest(ROOT)
     index = search.load(ROOT / "index/index.json", docs)
-    provider = Cached(make_provider(args.provider, args.model, None), ROOT / "runs/cache")
-    embed = embedder(None)
+    provider = Cached(make_provider(args.provider, args.model, args.base_url), ROOT / "runs/cache")
+    embed = embedder(args.embed_url)
     questions = json.loads((ROOT / "eval/questions.json").read_text())["questions"]
     if args.only:
         questions = [q for q in questions if q["id"] in args.only]
@@ -75,8 +79,9 @@ def main() -> None:
     with ThreadPoolExecutor(max_workers=args.parallel) as pool:
         runs = list(pool.map(run, questions))
 
-    out_dir = ROOT / "answers"
-    out_dir.mkdir(exist_ok=True)
+    out_dir = out_root / "answers"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_root / "eval").mkdir(parents=True, exist_ok=True)
     scores = []
     for q, a, hits_text in runs:
         scores.append(score(q, a, hits_text))
@@ -111,8 +116,9 @@ def main() -> None:
         "citations_removed": sum(s["removed"] for s in scores),
         "scores": scores,
     }
-    (ROOT / "eval/results.json").write_text(json.dumps(out, indent=2) + "\n")
-    (ROOT / "eval/RESULTS.md").write_text(markdown(out))
+    out["seconds"] = round(sum(json.loads((out_dir / f"{q['id']}.json").read_text())["seconds"] for q in questions), 1)
+    (out_root / "eval/results.json").write_text(json.dumps(out, indent=2) + "\n")
+    (out_root / "eval/RESULTS.md").write_text(markdown(out))
     print(markdown(out))
 
 

@@ -65,28 +65,50 @@ def parse_json(text: str) -> dict:
     try:
         return json.loads(text[start : end + 1])
     except json.JSONDecodeError as err:
+        # Without schema enforcement a model sometimes writes the list items as
+        # separate objects instead of {"items": [...]}. Collect them if so.
+        objects, pos, decoder = [], start, json.JSONDecoder()
+        while pos < len(text):
+            pos = text.find("{", pos)
+            if pos < 0:
+                break
+            try:
+                obj, pos = decoder.raw_decode(text, pos)
+                objects.append(obj)
+            except json.JSONDecodeError:
+                pos += 1
+        if len(objects) > 1 and all(isinstance(o, dict) and "quote" in o for o in objects):
+            return {"items": objects}
         raise ModelError(f"Reply is not valid JSON ({err}): {text[start:start + 200]!r}") from err
 
 
 class OpenAICompatible:
     name = "openai-compatible"
 
-    def __init__(self, model: str, base_url: str = "http://localhost:1234/v1", api_key: str | None = None, timeout: float = 900):
+    def __init__(self, model: str, base_url: str = "http://localhost:1234/v1", api_key: str | None = None, timeout: float = 900, schema_mode: str = "strict"):
         self.model = model
         self.base_url = base_url.rstrip("/")
         self.api_key = api_key
         self.timeout = timeout
+        # "strict" asks the server to enforce the JSON schema. Some servers do that
+        # with a slow, one-request-at-a-time grammar; "prompt" describes the schema
+        # in the prompt instead, and parse_json plus the checks downstream catch slips.
+        self.schema_mode = schema_mode
 
     def request_body(self, system: str, user: str, schema: dict, max_tokens: int) -> dict:
-        return {
+        body = {
             "model": self.model,
             "temperature": 0,
             "max_tokens": max_tokens,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
-            "response_format": {"type": "json_schema", "json_schema": {"name": "result", "strict": True, "schema": schema}},
             # Qwen-style models otherwise spend the token budget thinking aloud.
             "chat_template_kwargs": {"enable_thinking": False},
         }
+        if self.schema_mode == "strict":
+            body["response_format"] = {"type": "json_schema", "json_schema": {"name": "result", "strict": True, "schema": schema}}
+        else:
+            body["messages"][0]["content"] = f"{system}\n\nReply with one JSON object only, no other text, matching this JSON schema:\n{json.dumps(schema)}"
+        return body
 
     def embed(self, texts: list[str], model: str) -> list[list[float]]:
         headers = {"Authorization": f"Bearer {self.api_key}"} if self.api_key else {}
@@ -149,7 +171,9 @@ class Cached:
         self.misses = 0
 
     def complete_json(self, system: str, user: str, schema: dict, max_tokens: int) -> dict:
-        key = hashlib.sha256(json.dumps([self.inner.name, self.inner.model, system, user, schema], sort_keys=True).encode()).hexdigest()
+        mode = getattr(self.inner, "schema_mode", "strict")
+        parts = [self.inner.name, self.inner.model, system, user, schema] + ([mode] if mode != "strict" else [])
+        key = hashlib.sha256(json.dumps(parts, sort_keys=True).encode()).hexdigest()
         path = self.dir / f"{key[:2]}/{key}.json"
         if path.exists():
             self.hits += 1
@@ -173,5 +197,5 @@ def make_provider(name: str, model: str | None, base_url: str | None) -> Provide
     if name == "anthropic":
         return Anthropic(model or "claude-sonnet-5-5")
     if name in ("local", "openai-compatible"):
-        return OpenAICompatible(model or "qwen3.8-27b-mlx", base_url or "http://localhost:1234/v1", os.environ.get("OPENAI_API_KEY"))
+        return OpenAICompatible(model or "qwen3.8-27b-mlx", base_url or "http://localhost:1234/v1", os.environ.get("OPENAI_API_KEY"), schema_mode=os.environ.get("JSON_SCHEMA_MODE", "strict"))
     raise ValueError(f"Unknown provider {name!r}")
