@@ -36,37 +36,26 @@ scripts/run_eval.py     the evaluation in eval/
 
 ## Results
 
-30 questions in [`eval/questions.json`](eval/questions.json): 27 answerable from the sources, across all four jurisdictions, and 3 that are not. Each reference answer was checked against the source text.
+30 test questions ([`eval/questions.json`](eval/questions.json)), with answers checked against the source text.
 
 | Measure | Result |
 |---|---:|
-| Answer correct (the expected figure or rule is in the answer) | 27/27 |
-| Cites the right document, with a quote found in it | 27/27 |
-| Out-of-scope questions answered "not in these sources" | 3/3 |
-| Real conflicts between sources flagged | 2/2 |
-| Conflicts flagged where there are none | 0 |
-| For comparison, search alone: the top passage contains the answer | 19/27 |
+| Answers correct | 27/27 |
+| Right document cited, quote checked | 27/27 |
+| Out-of-scope questions answered "not found" | 3/3 |
+| Real conflicts flagged | 2/2 |
+| False conflict flags | 0 |
+| Search alone, right passage on top | 19/27 |
 
-Per-question results are in [`eval/RESULTS.md`](eval/RESULTS.md), and every saved answer is in [`answers/`](answers).
-
-**The two conflicts are real, and both are in current public documents:**
-- **NYS SDVOB discretionary limit:** the December 2024 OGS guide says $750,000; the NYS Discretionary Purchasing Guidelines revised August 2025 say $1,500,000.
-- **Federal SDVOSB sole-source caps:** FAR 19.1406 says $5 million, or $8.5 million in manufacturing. SBA's own rule, 13 CFR 128.405, still says $4,000,000 and $7,000,000.
-
-The second conflict was not known when the question was written. The navigator found it, and the reference was updated to expect the flag.
+Both conflicts are in current public documents:
+- **NYS SDVOB limit:** OGS guide (Dec 2024) says $750,000; the 2025 guidelines say $1,500,000.
+- **Federal SDVOSB sole-source cap:** FAR says $5 million; SBA's 13 CFR 128.405 still says $4 million.
 
 ![The federal sole-source answer, with the FAR and SBA figures flagged as disagreeing](docs/answer-federal-conflict.png)
 
-**Read these numbers with these caveats:**
-- The question set is small, and it was written by the same team that built the tool.
-- The search and answer rules were improved while running these same questions:
-  - small passages with neighboring context;
-  - following cross-references;
-  - ranking amendment history below current rules;
-  - looking up definitions;
-  - preferring the newer document when two conflict.
-- Earlier runs scored 93% to 96% correct before those changes.
-- A fresh set of questions is the honest next test.
+Caveats: a small question set, written by the builder, and the search was tuned on it. Earlier runs scored 93–96%.
+
+Details: [`eval/RESULTS.md`](eval/RESULTS.md) and [`answers/`](answers).
 
 ## Models tested
 
